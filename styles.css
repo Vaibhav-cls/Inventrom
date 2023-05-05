@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Navbar Section Styling*/
+.navbar {
+    margin: 0px 200px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 4px;
+}
+
+.navbar img {
+    width: 138px;
+    height: 44px;
+}
+
+.list {
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.list li {
+
+    margin: 0px 30px 0px 0px;
+    text-align: center;
+}
+
+.navbar .list a {
+    text-decoration: none;
+    color: #808080;
+    margin: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar .list a:hover {
+    color: black;
+}
+.navbar .button{
+    display: none;
+    margin: 0px 15px 0px 0px;
+    padding: 5px;
+}
+.dropbox{
+    background-color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.dropbox a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+/*Text-Image Section Styling*/
+.text-image-bg {
+    background-image: url('https://inventrom.com/images/background-layer.png');
+    height: 750px;
+    color: white;
+}
+
+.text-image-text {
+    font-size: 1.17em;
+    letter-spacing: 1.2px;
+    text-align: center;
+    line-height: 68px;
+    margin: 0px 100px;
+    padding: 20px;
+    padding-top: 200px;
+}
+
+.click_link b a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.click_link b a:hover {
+    color: black;
+}
+
+/*  About Section Styling*/
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.heading {
+    color: #095a22;
+    font-size: 22px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.para {
+    color: rgb(99, 99, 99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cards h4 {
+    margin-bottom: 20px;
+    margin: 0px 0px 20px 100px;
+}
+
+.our_vision,
+.our_mission {
+    width: 400px;
+    height: 300px;
+    margin: 0px 100px 100px 0px;
+}
+
+.our_vision img,
+.our_mission img {
+    width: 400px;
+    height: 300px;
+    margin: 0px 100px 10px;
+}
+
+.cards p {
+    font-size: 12px;
+    color: rgb(99, 99, 99);
+    margin: 0px 0px 20px 100px;
+}
+
+/* Awards Section styling*/
+.awards_section,
+.contact_section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: rgb(240, 240, 240);
+}
+
+.award_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_alignment img {
+    height: 200px;
+    width: 280px;
+}
+
+.card_alignment p {
+    font-size: 10px;
+    color: rgb(99, 99, 99);
+}
+
+.card_alignment .title {
+    font-size: 12px;
+}
+
+.card_alignment {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Contact Us section Styling*/
+.form_contact {
+    width: 1000px;
+}
+
+.form {
+    width: 450px;
+    float: left;
+    margin-right: 80px;
+}
+
+.contact_info p {
+    line-height: 30px;
+}
+
+.contact,
+.location {
+    margin: 0px 0px 30px;
+    font-size: 15px;
+}
+
+.details {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.details img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px 0px 0px;
+}
+
+.details p {
+    font-size: 12px;
+    color: #636363;
+}
+
+/*Footer Section Styling*/
+
+footer {
+    background-color: rgb(14, 94, 14);
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+footer img {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        margin: 0px 100px;
+    }
+
+    .cards img {
+        width: 350px;
+        height: 270px;
+    }
+
+    .our_vision h4,
+    .our_vision p,
+    .our_mission h4,
+    .our_mission p {
+        margin-bottom: 20px;
+        margin-left: 100px;
+        width: 350px;
+    }
+
+    .form_contact {
+        width: 780px;
+    }
+
+    .contact_info p {
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+    .navbar {
+        margin: 0px;
+    }
+    .navbar .button{
+        display:inline-block;
+        height: 32px;
+        background-color: transparent;
+        border: none;
+        margin-top: 8px;
+        text-align: center;
+        line-height: 20px;
+        color: grey;
+        box-sizing: border-box;
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+    .navbar .button:hover{
+        background-color: green;
+        color: white;
+    }
+    .dropbox a {
+        color: rgb(99, 99, 99);
+        text-align: right;
+        margin-right: 15px;
+        padding-bottom: 5px;
+        font-size: 17px;
+    }
+    .dropbox a:hover{
+        color: black;
+    }
+    .list{
+        display: none;
+    }
+    .text-image-text {
+        font-size: 0.8em;
+        letter-spacing: 1.2px;
+        line-height: 60px;
+    }
+
+    .cards {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cards img {
+        width: 300px;
+        height: 200px;
+        margin: 0px 100px;
+    }
+
+    .our_vision h4,
+    .our_vision p,
+    .our_mission h4,
+    .our_mission p {
+        margin-bottom: 20px;
+        margin-left: 0px;
+        width: 300px;
+    }
+
+    .form {
+        float: none;
+    }
+
+    .form_contact {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact_info{
+        margin: 119px;
+    }
+    .award_cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
